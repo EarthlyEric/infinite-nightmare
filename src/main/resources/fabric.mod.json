@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "infinite-nightmare",
+	"version": "${version}",
+	"name": "Infinite Nightmare",
+	"description": "The Unknown spread",
+	"authors": [
+		"EarthlyEric6",
+		"DestinySoul Studio LTD."
+	],
+	"contact": {
+		"homepage": "https://destinysoul.xyz",
+		"sources": "https://github.com/EarthlyEric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/infinite-nightmare/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.destinysoul.infinitenightmare.InfiniteNightmare"
+		],
+		"fabric-datagen": [
+			"dev.destinysoul.infinitenightmare.InfiniteNightmareDataGenerator"
+		]
+	},
+	"mixins": [
+		"infinite-nightmare.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
