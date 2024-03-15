@@ -13,7 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class CommonBlocks {
     public static final Block UNDEFINED_BLOCK = registerBlock("undefined_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundGroup.STONE)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
