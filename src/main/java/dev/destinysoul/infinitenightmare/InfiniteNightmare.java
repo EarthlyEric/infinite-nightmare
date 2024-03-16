@@ -2,6 +2,8 @@ package dev.destinysoul.infinitenightmare;
 
 import dev.destinysoul.infinitenightmare.blocks.CommonBlocks;
 import dev.destinysoul.infinitenightmare.itemGroups.BlocksItemGroup;
+import dev.destinysoul.infinitenightmare.sounds.BlockSounds;
+import dev.destinysoul.infinitenightmare.sounds.BlockSoundsGroup;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,6 +17,8 @@ public class InfiniteNightmare implements ModInitializer {
 	public void onInitialize() {
 		CommonBlocks.registerCommonBlocks();
 		BlocksItemGroup.registerItemGroups();
+		BlockSounds.registerBlockSounds();
+		BlockSoundsGroup.registerBlockSoundsGroup();
 		LOGGER.info("Infinite Nightmare loaded successfully");
 	}
 }

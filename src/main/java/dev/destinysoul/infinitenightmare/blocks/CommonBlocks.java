@@ -1,5 +1,6 @@
 package dev.destinysoul.infinitenightmare.blocks;
 
+import dev.destinysoul.infinitenightmare.sounds.BlockSoundsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import dev.destinysoul.infinitenightmare.InfiniteNightmare;
@@ -13,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class CommonBlocks {
     public static final Block UNDEFINED_BLOCK = registerBlock("undefined_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundGroup.STONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundsGroup.UNDEFINED_BLOCK_SOUNDS)));
 
 
     private static Block registerBlock(String name, Block block) {

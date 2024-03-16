@@ -1,0 +1,11 @@
+{
+  "undefined_block_sound":{
+  "subtitle": "sounds.infinite-nightmare.undefined_block_sound",
+  "sounds": [
+    "infinite-nightmare:undefined_block_sound_1",
+    "infinite-nightmare:undefined_block_sound_2",
+    "infinite-nightmare:undefined_block_sound_3",
+    "infinite-nightmare:undefined_block_sound_4"
+    ]
+  }
+}

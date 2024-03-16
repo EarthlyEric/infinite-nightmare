@@ -1,4 +1,5 @@
 {
   "block.infinite-nightmare.undefined_block": "Undefined Block",
-  "itemgroup.blocks": "Infinite Nightmare - Blocks"
+  "itemgroup.blocks": "Infinite Nightmare - Blocks",
+  "sounds.infinite-nightmare.undefined_block_sound": "§k What things you are waiting for ?"
 }
