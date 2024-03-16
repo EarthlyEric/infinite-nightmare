@@ -13,7 +13,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class BlocksItemGroup {
-    public static final ItemGroup Blocks_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(InfiniteNightmare.ModID, "blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.blocks"))
                     .icon(() -> new ItemStack(Items.DIAMOND_PICKAXE)).entries((displayContext, entries) -> {
