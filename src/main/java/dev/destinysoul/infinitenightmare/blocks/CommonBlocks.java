@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class CommonBlocks {
     public static final Block UNDEFINED_BLOCK = registerBlock("undefined_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundsGroup.UNDEFINED_BLOCK_SOUNDS)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).sounds(BlockSoundsGroup.UNDEFINED_BLOCK_SOUNDS)));
 
 
     private static Block registerBlock(String name, Block block) {
