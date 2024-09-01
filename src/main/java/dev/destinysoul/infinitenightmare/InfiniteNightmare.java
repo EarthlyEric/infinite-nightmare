@@ -20,7 +20,7 @@ public class InfiniteNightmare implements ModInitializer {
 	public static final String ModID = "infinite-nightmare";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ModID);
 
-	public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("infinite-nightmare","block_gen"));
+	public static final RegistryKey<PlacedFeature> BLOCK_GEN_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("infinite-nightmare","block_gen"));
 
 	@Override
 	public void onInitialize() {
@@ -28,7 +28,7 @@ public class InfiniteNightmare implements ModInitializer {
 		BlocksItemGroup.registerItemGroups();
 		BlockSounds.registerBlockSounds();
 		BlockSoundsGroup.registerBlockSoundsGroup();
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, BLOCK_GEN_PLACED_KEY);
 		LOGGER.info("Infinite Nightmare loaded successfully");
 	}
 }
